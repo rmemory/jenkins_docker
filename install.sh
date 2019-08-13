@@ -48,3 +48,7 @@ docker run -p 8080:8080 -p 50000:50000 -v /var/jenkins_home:/var/jenkins_home -v
 
 echo 'Jenkins installed'
 echo 'You should now be able to access jenkins at: http://'$(curl -s ifconfig.co)':8080'
+
+# You can test access to Docker inside of jenkins-docker by doing the following:
+# $ docker exec -it jenkins-docker bash
+# jenkins@73633f94987e:/$ docker ps -a
